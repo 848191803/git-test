@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>git测试</title>
+	<style>
+			.div1{
+				background: #ff0;
+			}
+			.div2{
+				background: #f0f;
+				width: 60px;
+				height: 40px;
+			}
+			.box{
+				/*box-sizing: border-box;*/
+				padding: 10px;
+				display: flex;
+				position: absolute;
+				/*position: relative;*/
+				left: 10%;
+				top: auto;
+				/*display: none;*/
+				width: 100%;
+				width: 600px;
+				height: 400px;
+				background: #aaa;
+				border: #000 3px solid;
+				/*flex-direction: row-reverse;*/
+				flex-wrap: wrap;
+				/*flex-flow:row-reverse wrap-reverse;*/
+				/*justify-content: space-around;*/
+				/*align-items:center;*/
+				align-content:center;
+				color: #333;
+			}
+			.box div{
+				flex-grow: 1;
+				flex-shrink:1;flex-basis: 100px;
+				width: 260px;
+				margin-bottom: 20px;
+				/*height: 200px;*/
+				background: #f06;
+				color: #fff;
+				font-size: 20px;
+				text-align: center;
+			}
+			:root{
+				--好fS16px: 50px;
+				--main-bg-color: #6f0;
+			}
+			div{
+				--fS16px:12px;
+			}
+			.box .b2{
+				font-size: 16px;
+				font-size:var(--好fS16px,100px);
+				position: -moz-sticky;
+				/*flex-grow: 2;*/
+			}
+			.box .b1::selection{
+				color: #000;
+			}
+			.box div:not(.b1){
+				color: #60f;
+			}
+			.out{
+				touch-action: manipulation;
+			}
+		</style>
+</head>
+<body>
+	111
+</body>
+</html>
